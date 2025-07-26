@@ -1,0 +1,30 @@
+/* dashboard/styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #f0f0f0;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    background-color: #1f8ef1;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0d6efd;
+}
+
+input {
+    margin: 5px;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
