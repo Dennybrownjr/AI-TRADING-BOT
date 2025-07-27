@@ -1,0 +1,18 @@
+// patternRecognition.js
+
+function patternRecognition(priceData) {
+    if (!priceData || priceData.length < 2) return "HOLD";
+
+    const latest = priceData[priceData.length - 1];
+    const previous = priceData[priceData.length - 2];
+
+    if ((latest - previous) / previous > 0.01) {
+        return "BUY";
+    } else if ((previous - latest) / previous > 0.01) {
+        return "SELL";
+    } else {
+        return "HOLD";
+    }
+}
+
+module.exports = patternRecognition;
